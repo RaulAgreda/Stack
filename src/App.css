@@ -1,0 +1,119 @@
+.taskCard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 10px;
+    overflow-y: scroll;
+}
+
+.taskCard {
+    display: flex;
+    align-items: center;
+    background-color: #cacaca;
+    column-gap: 5px;
+    padding-right: 10px;
+    width: 100%;
+    border: none;
+    background-color: #00d9ff; /* Green */
+    color: rgb(0, 0, 0);
+}
+
+/* .taskCard:focus {
+    background-color: #00ffbf; 
+    color: rgb(0, 0, 0);
+} */
+
+.taskCard-completed {
+    filter: grayscale(100%);
+}
+
+.taskCard-completed-container {
+    background-color: grey;
+}
+
+.addTask-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.addTask-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.addTask-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.addTask-button {
+    background-color: #00d9ff; /* Green */
+    border: none;
+    border-radius: 2px;
+    aspect-ratio: 1;
+}
+
+.addTask-button > img {
+    height: 100%;
+}
+
+.addTask-button:active {
+    background-color: #00ff0d; /* Green */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#root  {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+}
+
+main {
+    height: calc(100% - 80px - 50px);
+}
+
+aside {
+    display: none;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
